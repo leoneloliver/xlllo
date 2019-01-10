@@ -6,7 +6,7 @@
 </div>
 <div class="search-bar">
   <div class="md-form">
-    <i class="fa fa-search"></i> <input type="search" [(ngModel)]="searchText" placeholder="Search text" />
+    <i class="fa fa-search">🔍</i> <input type="search" [(ngModel)]="searchText" placeholder="Search Users" />
   </div>
 </div>
 
@@ -23,8 +23,8 @@
         </div>
         <div class="pb-description">
           <div class="description">
-            <a>{{ user.name.first }} {{ user.name.last }}</a>
-            <div class="address">{{ user.email }}</div>
+            <p>{{ user.name.first }} {{ user.name.last }}</p>
+            <p class="address">{{ user.email }}</p>
           </div>        
         </div>
       </div>
