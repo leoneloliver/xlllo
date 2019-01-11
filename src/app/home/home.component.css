@@ -1,23 +1,18 @@
 .panel{
   background-image: -webkit-linear-gradient(right,#0ce7b0,#1362cf);
-/*   background-image: linear-gradient(270deg,#3cc1c7 0,#3e7df3); */
   background-image: linear-gradient(270deg,#0ce7b0 0,#1362cf);
   color: #fff;
   text-shadow: 1px 2px 3px #5d5d5d;
   padding: 40px 10px;
-  
 }
 .title-container{
   max-width: 98%;
   margin: 0 auto;
 }
-
 h1{
   font-size: 2em
 }
-
 /*Interface styling*/
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -25,15 +20,11 @@ h1{
   list-style: none;
   font: normal 1em sans-serif;
 }
-
-
 a {
   text-decoration: none;
   color: #212121;
 }
-
 /*Begin Flex Styling*/
-
 #productWrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -45,7 +36,6 @@ a {
   margin: 10px auto;
   max-width: 98%;
 }
-
 .product-block {
   border: solid 1px #e0e0e0;
   display: -webkit-box;
@@ -56,28 +46,21 @@ a {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-
 li.product-block:hover {
   background: #8ad3b21a;
   cursor: pointer;
   box-shadow: -3px 0px 0px 0px #4e91c2;
 }
-
 li.product-block img{
   -webkit-filter: grayscale(30%); /* Safari 6.0 - 9.0 */
   filter: grayscale(30%);
 }
-
 li.product-block:hover img{
   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
 }
 
-
-
-
 /*BEGIN LIST VIEW*/
-
 .list-view .product-block {
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -88,7 +71,6 @@ li.product-block:hover img{
   text-align: left;
   width: 100%;
 }
-
 .list-view .product-block div {
   display: -webkit-box;
   display: -webkit-flex;
@@ -102,7 +84,6 @@ li.product-block:hover img{
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-
 .list-view .product-block .pb-upper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -113,7 +94,6 @@ li.product-block:hover img{
   -ms-flex: 2;
   flex: 2;
 }
-
 .list-view .pb-image {
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
@@ -122,7 +102,6 @@ li.product-block:hover img{
   display: inline-block;
   max-width: 85px;
 }
-
 .list-view .pb-description {
   text-align: left;
   -webkit-box-flex: 2;
@@ -132,13 +111,11 @@ li.product-block:hover img{
   padding-top: 8px;
   text-transform: capitalize;
 }
-
 .list-view .pb-image img {
   width: 100%;
   height: auto;
   border-radius: 50px;
 }
-
 .list-view .pb-description p {
   text-align: left;
   width: 100%;
@@ -146,10 +123,9 @@ li.product-block:hover img{
   padding: 0;
   margin: 0;
 }
-
 .list-view .location{
   font-size: 0.9em;
-  color: #929090;
+  color: #575757;
   font-weight: 100;
 }
 .list-view .pb-description a {
@@ -166,7 +142,6 @@ li.product-block:hover img{
   display: block;
   transition: all .9s ease;
 }
-
 .search-bar {
   position: fixed;
   /* position: absolute; */
