@@ -33,8 +33,13 @@ a.btn-start {
   text-decoration: none;
   background: #e74e68;
   padding: 12px 40px;
-  /* margin-top: 30px; */
   border-radius: 50px;
+  transition: all .9s ease;
+  box-shadow: -1px 2px 12px #505050;
 }
-
+a.btn-start:hover {
+  color: #cfcfcf;
+  background: #d55f6f80;
+  transition: all .9s ease;
+}
 

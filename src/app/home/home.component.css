@@ -58,8 +58,19 @@ a {
 }
 
 li.product-block:hover {
-  background: #efefef;
+  background: #8ad3b21a;
   cursor: pointer;
+  box-shadow: -3px 0px 0px 0px #4e91c2;
+}
+
+li.product-block img{
+  -webkit-filter: grayscale(30%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(30%);
+}
+
+li.product-block:hover img{
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
 }
 
 
@@ -88,8 +99,8 @@ li.product-block:hover {
   -ms-flex: 1;
   flex: 1;
   -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .list-view .product-block .pb-upper {
@@ -105,8 +116,8 @@ li.product-block:hover {
 
 .list-view .pb-image {
   -webkit-align-self: stretch;
-      -ms-flex-item-align: stretch;
-          align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
   height: 100%;
   display: inline-block;
   max-width: 85px;
@@ -124,8 +135,8 @@ li.product-block:hover {
 
 .list-view .pb-image img {
   width: 100%;
-  padding-right: 10px;
   height: auto;
+  border-radius: 50px;
 }
 
 .list-view .pb-description p {
@@ -136,13 +147,24 @@ li.product-block:hover {
   margin: 0;
 }
 
+.list-view .location{
+  font-size: 0.9em;
+  color: #929090;
+  font-weight: 100;
+}
 .list-view .pb-description a {
   font: normal 0.9em sans-serif;
 }
-.list-view .address {
+.address {
   font: normal 0.7em sans-serif;
   text-transform: lowercase;
   color: #747373;
+  display: none;
+  transition: all .9s ease;
+}
+.product-block:hover .address {
+  display: block;
+  transition: all .9s ease;
 }
 
 .search-bar {
@@ -152,6 +174,7 @@ li.product-block:hover {
   padding: 10px;
   background: #000;
   width: 100%;
+  z-index: 1;
 }
 input[type="search"] {
   height: 39px;

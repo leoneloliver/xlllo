@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
 
   users: Object;
   searchText = "";
+  title = 'Tutors';
 
   constructor(private data: DataService) { }
 
