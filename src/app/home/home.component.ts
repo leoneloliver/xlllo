@@ -24,6 +24,7 @@ export class HomeComponent implements OnInit {
     this.data.getUsers().subscribe(data => {
         this.users = data
         console.log(this.users);
+        // myAct();
       }
     );
   }

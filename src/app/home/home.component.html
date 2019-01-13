@@ -17,7 +17,12 @@
   <ul id="productWrapper" *ngIf="users">
    
     <li class="product-block" *ngFor='let user of users.results | filter: searchText'>
-      <div class="pb-upper">
+      <div class="pb-upper" 
+      attr.data-name="{{ user.name.first }} {{ user.name.last }}"
+      attr.data-email="{{ user.email }}"
+      attr.data-address="{{ user.location.city }} - {{ user.location.state }}"
+      attr.data-avatar="{{ user.picture.medium }}"
+      >
         <div class="pb-image">
           <a><img [src]="user.picture.medium" border="0" alt="Some great product" class="pb-img"></a>
         </div>
@@ -33,6 +38,28 @@
   </ul>
 </div>
 
+<div id="my-modal">
+  <div id="close">X</div>
+  <div class="card">
+    <div class="profile-bg">
+      <img src="" id="avatar"> 
+    </div> 
+    <div class="profile-info">
+      <h2 id="name"></h2>
+      <div id="email"></div>
+      <div id="address"></div>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard...
+      </p>
+    </div>
+    <div class="profile-footer">
+      
+      <a routerLink="/contact" class="btn-send">Contact</a>
+    </div>
+  </div>
+ 
+
+</div>
 
 
 
