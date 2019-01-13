@@ -17,13 +17,11 @@ ul {
   max-width: 500px;
   margin: 0 auto !important;
 }
-
 li {
   float: left;
   width: 33%;
   text-align: center;
 }
-
 li a {
   display: block;
   color: white;
@@ -31,7 +29,6 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-
 li a:hover {
   background-color: #111;
 }
