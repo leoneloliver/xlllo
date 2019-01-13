@@ -23,11 +23,11 @@ function myAct(){
 		  Array.from(classname).forEach(function(element) {
 		    element.addEventListener("click", myFunction);
 		  });
-		  // document.getElementById("close").addEventListener("click", closeModal);
-		  // function closeModal(){
-		  //   document.getElementById("my-modal").classList.remove("show-it");
-		  //   document.getElementById("my-modal").getElementsByTagName("iframe")[0].src="";
-		  // }
+		  document.getElementById("close").addEventListener("click", closeModal);
+		  document.getElementById("my-modal").addEventListener("click", closeModal);
+		  function closeModal(){
+		    document.getElementById("my-modal").classList.remove("show-it");
+		  }
 
 
 		}, 1000);

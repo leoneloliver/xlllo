@@ -233,5 +233,13 @@ a.btn-send {
     color: #fff;
     border-radius: 20px;
 }
+div#close {
+    text-align: right;
+    padding: 20px;
+    font-weight: bold;
+    margin-bottom: -58px;
+    color: #fff;
+    cursor: pointer;
+}
 
 
