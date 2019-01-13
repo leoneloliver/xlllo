@@ -1,0 +1,72 @@
+.panel{
+  background-image: -webkit-linear-gradient(right,#0ce7b0,#1362cf);
+/*   background-image: linear-gradient(270deg,#3cc1c7 0,#3e7df3); */
+  background-image: linear-gradient(270deg,#0ce7b0 0,#1362cf);
+  color: #fff;
+  text-shadow: 1px 2px 3px #5d5d5d;
+  padding: 40px 10px;
+  
+}
+.title-container{
+  max-width: 98%;
+  margin: 0 auto;
+}
+
+.form-content{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+h1{
+  font-size: 2em
+}
+
+label {
+  display: block;
+}
+label input, label textarea {
+
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0.5em;
+}
+label .error {
+      margin-top: -29px;
+    background: #ff6203;
+    padding: 0.5em;
+    display: inline-block;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    color: #fff;
+    width: 100%;
+}
+
+.cta {
+  background: #0fbeba;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.results {
+  margin-top: 50px;
+}
+.results strong {
+  display: block;
+}
+.results span {
+  margin-bottom: 20px;
+  display: block;
+}
+h5 {
+    padding: 20px;
+    background: #0fbeba;
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 1.2em;
+}
