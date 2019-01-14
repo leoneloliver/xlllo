@@ -3,7 +3,7 @@
   background-image: linear-gradient(270deg,#0ce7b0 0,#1362cf);
   color: #fff;
   text-shadow: 1px 2px 3px #5d5d5d;
-  padding: 40px 10px;  
+  padding: 30px 10px;
 }
 .title-container{
   max-width: 98%;
@@ -23,30 +23,29 @@ label{
 label input, label textarea{
   display: block;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   padding: 0.5em;
+  margin-top: 5px;
 }
 label .error{
-  margin-top: -29px;
-  background: #ff6203;
-  padding: 0.5em;
-  display: inline-block;
+  margin-top: -12px;
   font-size: 0.9em;
-  margin-bottom: 20px;
-  color: #fff;
+  margin-bottom: 18px;
+  color: #f00;
   width: 100%;
 }
 .cta{
   background: #0fbeba;
   border: none;
   color: white;
-  text-transform: uppercase;
-  border-radius: 4px;
-  padding: 1em;
+  text-transform: capitalize;
+  border-radius: 50px;
+  padding: 12px 30px;
   cursor: pointer;
 }
 .results{
-  margin-top: 50px;
+  margin-top: 30px;
+  color: #616060;
 }
 .results strong{
   display: block;
@@ -56,9 +55,11 @@ label .error{
   display: block;
 }
 h5{
-  padding: 20px;
-  background: #0fbeba;
+  padding: 7px 20px;
+  background: #e6f8e9;
   margin-bottom: 30px;
-  color: #fff;
-  font-size: 1.2em;
+  color: #8eb795;
+  border: 1px solid #8eb795;
+  border-radius: 5px;
+  font-size: 1em;
 }

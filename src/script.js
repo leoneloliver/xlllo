@@ -2,8 +2,6 @@
 function myAct(){
 	console.log("loading list of tutors...");
 
-	
-
 	setTimeout(function(){ 
 		var classname = document.getElementsByClassName("pb-upper");
 			var myFunction = function() {
@@ -11,9 +9,7 @@ function myAct(){
 		    var email = this.getAttribute("data-email");
 		    var address = this.getAttribute("data-address");
 		    var avatar = this.getAttribute("data-avatar");
-
-		    //alert(name+'-'+email+'-'+address+'-'+avatar);
-		   
+		    //alert(name+'-'+email+'-'+address+'-'+avatar);		   
 		    document.getElementById("avatar").src=avatar;
 		    document.getElementById("name").innerText=name;
 		    document.getElementById("address").innerText=address;
@@ -28,10 +24,5 @@ function myAct(){
 		  function closeModal(){
 		    document.getElementById("my-modal").classList.remove("show-it");
 		  }
-
-
 		}, 1000);
-
-
-
 }

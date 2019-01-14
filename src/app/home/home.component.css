@@ -212,7 +212,6 @@ div#my-modal {
 }
 img#avatar {
   margin-top: 22px;
-  margin-left: 20px;
   border-radius: 50px;
 }
 div#address {
@@ -226,7 +225,7 @@ div#address {
   padding: 25px;
 }
 a.btn-send {
-  background: #6aafbb;
+  background: #0fbeba;
   padding: 9px 40px;
   color: #fff;
   border-radius: 20px;
@@ -238,6 +237,9 @@ div#close {
   margin-bottom: -59px;
   color: #fff;
   cursor: pointer;
+}
+.center{
+  text-align: center;
 }
 
 
