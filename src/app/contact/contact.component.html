@@ -2,19 +2,11 @@
   <div class="title-container">
     <h1>Contact</h1>
   </div>
-  
 </div>
-
-
 <div class="form-content" >
-
-
 	<form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
-
-    <h5 *ngIf="success">&#10003; Your form is valid!</h5>
-
+    <h5 *ngIf="success">&#10003; Your message has been sent =)</h5>
     <div *ngIf="!success">
-
 	    <label>
 	      Name:
 	      <input type="text" formControlName="name">
@@ -22,7 +14,6 @@
 	        <div *ngIf="messageForm.controls.name.errors.required">Your name is required</div>
 	      </div>
 	    </label>
-	  
 	    <label>
 	      Email:
 	      <input type="text" formControlName="email">
@@ -31,7 +22,6 @@
 	        <div *ngIf="messageForm.controls.email.errors.pattern">Wrong email format </div>
 	      </div>
 	    </label>
-
 	     <label>
 	      Message:
 	      <textarea formControlName="message"></textarea>
@@ -39,26 +29,15 @@
 	        <div *ngIf="messageForm.controls.message.errors.required">A message is required</div>
 	      </div>
 	    </label>
-
-
 	    <input type="submit" value="Send message" class="cta">
-  
-
 	  </div>  
-
-    
   </form>
-
   <div *ngIf="submitted && success" class="results">
     <strong>Name:</strong> 
     <span>{{ messageForm.controls.name.value }}</span>
-
     <strong>Message:</strong> 
     <span>{{ messageForm.controls.message.value }}</span>
-
-
     <strong>Email:</strong> 
     <span>{{ messageForm.controls.email.value }}</span>
   </div>
-
 </div>
