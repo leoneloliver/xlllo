@@ -192,11 +192,12 @@ div#my-modal.show-it {
   background: #fff;
   box-shadow: 2px 4px 5px 2px #525252;
   border-radius: 5px;
-  transition: all .9s ease !important;
-  margin: -10% auto;
+  transition: all .3s ease !important;
+  margin: -20% auto;
 }
 .show-it  .card{
   margin: 10% auto !important;
+  transition: all .6s ease !important;
 }
 .profile-bg {
   height: 60px;
