@@ -33,7 +33,7 @@ a {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 5px auto;
+  margin: 2px auto;
   max-width: 98%;
 }
 .product-block {
@@ -184,7 +184,7 @@ div#my-modal.show-it {
   background: #0000009c;
   top: 0;
   z-index: 9999999999999;
-  transition: all .1s ease;
+  /*transition: all .1s ease;*/
 }
 .card {
   max-width: 800px;
@@ -193,7 +193,7 @@ div#my-modal.show-it {
   box-shadow: 2px 4px 5px 2px #525252;
   border-radius: 5px;
   transition: all .3s ease !important;
-  margin: -20% auto;
+  margin: -50% auto;
 }
 .show-it  .card{
   margin: 10% auto !important;
@@ -206,7 +206,7 @@ div#my-modal.show-it {
 }
 .profile-info{
   padding: 30px;
-  margin-top: 20px;
+  margin-top: 48px;
 }
 .profile-info h2{
   font-size: 1.3em;
@@ -215,7 +215,9 @@ div#my-modal.show-it {
 }
 img#avatar {
   margin-top: 22px;
-  border-radius: 50px;
+  border-radius: 80px;
+  border: 2px #fff solid;
+  width: 110px;
 }
 div#address {
   font-size: 1.1em;
@@ -225,7 +227,7 @@ div#address {
 }
 .profile-footer {
   text-align: center;
-  padding: 25px;
+  padding: 0px 0px 35px;
 }
 a.btn-send {
   background: #0fbeba;
@@ -244,5 +246,11 @@ div#close {
 .center{
   text-align: center;
 }
-
+.review{
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+.review span {
+  color: #efc439;
+}
 

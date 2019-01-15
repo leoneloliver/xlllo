@@ -11,6 +11,7 @@ export class ContactComponent implements OnInit {
   messageForm: FormGroup;
   submitted = false;
   success = false;
+  title = 'Contact';
 
   constructor(private formBuilder: FormBuilder) { }
 

@@ -19,7 +19,7 @@
       attr.data-name="{{ user.name.first }} {{ user.name.last }}"
       attr.data-email="{{ user.email }}"
       attr.data-address="{{ user.location.city }} - {{ user.location.state }}"
-      attr.data-avatar="{{ user.picture.medium }}"
+      attr.data-avatar="{{ user.picture.large }}"
       >
         <div class="pb-image">
           <a><img [src]="user.picture.medium" border="0" alt="Some great product" class="pb-img"></a>
@@ -29,6 +29,15 @@
             <p>{{ user.name.first }} {{ user.name.last }}</p>
             <p class="address">{{ user.email }}</p>
             <p class="location">{{ user.location.city }} - {{ user.location.state }}</p>
+           <!--  <div *ngIf="user.gender=='male'; then thenPart; else elsePart">
+            </div>
+            <ng-template #thenPart>
+              <div>&#9794;</div>
+            </ng-template>
+            <ng-template #elsePart>
+              <div>&#9792;</div>
+            </ng-template>
+ -->
           </div>        
         </div>
       </div>
@@ -43,6 +52,7 @@
       <img src="" id="avatar"> 
     </div> 
     <div class="profile-info">
+      <div class="review center"><span>&#9733;</span> 4.9</div>
       <h2 id="name" class="center"></h2>
       <div id="email" class="center"></div>
       <div id="address" class="center"></div>

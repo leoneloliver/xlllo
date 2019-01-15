@@ -12,7 +12,7 @@
 .form-content{
   max-width: 900px;
   margin: 0 auto;
-  padding: 40px;
+  padding: 40px 20px;
 }
 h1{
   font-size: 2em
@@ -26,6 +26,8 @@ label input, label textarea{
   margin-bottom: 18px;
   padding: 0.5em;
   margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #a2a2a2;
 }
 label .error{
   margin-top: -12px;
@@ -62,4 +64,7 @@ h5{
   border: 1px solid #8eb795;
   border-radius: 5px;
   font-size: 1em;
+}
+.center{
+  text-align: center;
 }
