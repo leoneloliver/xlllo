@@ -253,4 +253,8 @@ div#close {
 .review span {
   color: #efc439;
 }
-
+@media only screen and (max-width: 680px) {
+  .center-mobile{
+    text-align: center;
+  }
+}
