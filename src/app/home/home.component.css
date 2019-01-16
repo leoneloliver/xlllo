@@ -33,7 +33,7 @@ a {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 2px auto;
+  margin: 5px auto;
   max-width: 98%;
 }
 .product-block {
@@ -45,6 +45,7 @@ a {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  background: #fff;
 }
 li.product-block:hover {
   background: #8ad3b21a;

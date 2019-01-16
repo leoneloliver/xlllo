@@ -29,7 +29,9 @@
 	        <div *ngIf="messageForm.controls.message.errors.required">A message is required</div>
 	      </div>
 	    </label>
-	    <input type="submit" value="Send message" class="cta">
+	    <div class="center-mobile">
+	    	<input type="submit" value="Send message" class="cta">
+	    </div>
 	  </div>  
   </form>
   <div *ngIf="submitted && success" class="results">
