@@ -48,7 +48,7 @@ a {
   background: #fff;
 }
 li.product-block:hover {
-  background: #8ad3b21a;
+  background: #f4f4f4;
   cursor: pointer;
   box-shadow: -3px 0px 0px 0px #4e91c2;
 }
