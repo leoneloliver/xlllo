@@ -31,11 +31,11 @@ function myAct(){
 
 		  document.getElementById("close-box").addEventListener("click", closeMessege);
 		  function closeMessege(){
-		    document.getElementById("message-box").classList.remove("show");
-		    document.getElementById("msg").innerHTML = "";
+		   	document.getElementById("message-box").classList.remove("show");
 		  }
 
 		  var callMsg = function(){
+		  	document.getElementById("msg").innerHTML = "";
 		  	document.getElementById("message-box").classList.add("show"); 
 		  	var btn = document.getElementById("send");
 				var message = document.getElementById("message");
