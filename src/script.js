@@ -32,6 +32,7 @@ function myAct(){
 		  document.getElementById("close-box").addEventListener("click", closeMessege);
 		  function closeMessege(){
 		    document.getElementById("message-box").classList.remove("show");
+		    document.getElementById("msg").innerHTML = "";
 		  }
 
 		  var callMsg = function(){
