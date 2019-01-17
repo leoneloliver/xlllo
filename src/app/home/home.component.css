@@ -301,6 +301,7 @@ div#close {
   color: #fff;
   padding: 12px 30px;
   text-align: right;
+  cursor: pointer;
 }
 #close-box i {
   float: left;
