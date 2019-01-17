@@ -265,7 +265,6 @@ div#close {
 #message-box {
   width: 100%;
   background: #fff;
-  border: 1px solid #ccc;
   transition: all .3s ease !important;
   height: 100vh;
   box-sizing: border-box;
