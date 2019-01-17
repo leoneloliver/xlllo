@@ -16,6 +16,7 @@ function myAct(){
 		    document.getElementById("email").innerText=email;
 		    document.getElementById("my-modal").classList.add("show-it"); 
 		    document.getElementById("badge").innerText=name;
+		    document.getElementById("mini-avatar").src=avatar;
 		   };
 
 		  Array.from(classname).forEach(function(element){
