@@ -14,15 +14,40 @@ function myAct(){
 		    document.getElementById("name").innerText=name;
 		    document.getElementById("address").innerText=address;
 		    document.getElementById("email").innerText=email;
-		    document.getElementById("my-modal").classList.add("show-it");   
+		    document.getElementById("my-modal").classList.add("show-it"); 
+		    document.getElementById("badge").innerText=name;
 		   };
-		  Array.from(classname).forEach(function(element) {
+
+		  Array.from(classname).forEach(function(element){
 		    element.addEventListener("click", myFunction);
 		  });
+
 		  document.getElementById("close").addEventListener("click", closeModal);
 		  document.getElementById("my-modal").addEventListener("click", closeModal);
 		  function closeModal(){
 		    document.getElementById("my-modal").classList.remove("show-it");
 		  }
+
+		  document.getElementById("close-box").addEventListener("click", closeMessege);
+		  function closeMessege(){
+		    document.getElementById("message-box").classList.remove("show");
+		  }
+
+		  var callMsg = function(){
+		  	document.getElementById("message-box").classList.add("show"); 
+		  	var btn = document.getElementById("send");
+				var message = document.getElementById("message");
+				var box = document.getElementById("msg");
+				btn.addEventListener("click", sendMessage);
+				function sendMessage(){
+				  box.innerHTML += "<p class='line'>"+ message.value+"</p>";
+				  message.value = "";
+				}
+		  }
+
+		  document.getElementById("call-msg").addEventListener("click", callMsg);
+		
+
+
 		}, 1000);
 }

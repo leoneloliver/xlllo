@@ -235,6 +235,7 @@ a.btn-send {
   padding: 9px 40px;
   color: #fff;
   border-radius: 20px;
+  cursor: pointer;
 }
 div#close {
   text-align: right;
@@ -259,3 +260,77 @@ div#close {
     text-align: center;
   }
 }
+
+/*message box*/
+#message-box {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ccc;
+  transition: all .3s ease !important;
+  height: 100vh;
+  box-sizing: border-box;
+  display: none;
+  display: block;
+  position: fixed;
+  z-index: 99999999999;
+  top: -300%;
+  transition: all .3s ease !important;
+}
+#msg p {
+  padding: 1px 15px;
+  color: #6f6f6f;
+}
+#message-box.show{
+  top: 0;
+  transition: all .3s ease !important;
+}
+#badge {
+  background: #ccc;
+  padding: 6px 15px;
+  text-align: center;
+  border-radius: 50px;
+  text-transform: capitalize;
+  display: -webkit-inline-box;
+}
+.message-title {
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+#close-box{
+  background-image: -webkit-linear-gradient(right,#0ce7b0,#1362cf);
+  background-image: linear-gradient(270deg,#0ce7b0 0,#1362cf);
+  color: #fff;
+  padding: 12px 30px;
+  text-align: right;
+}
+div#msg {
+  min-height: 200px;
+  border-bottom: 1px solid #b9aeae;
+  height: 50vh;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+.message-footer {
+  padding: 5px;
+  border-bottom: 1px solid #b9aeae;
+  padding: 6px 10px;
+}
+input[type="text"]{
+  height: 40px;
+  border: 1px solid #989898;
+  width: 70%;
+  padding: 0px 5px;
+}
+input[type="submit"] {
+  height: 42px;
+  font-size: 1em;
+  width: 24%;
+  border: none;
+  background: #0fbeba;
+  padding: 9px 1px;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+

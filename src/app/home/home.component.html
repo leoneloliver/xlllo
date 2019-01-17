@@ -45,6 +45,7 @@
   </ul>
 </div>
 
+<!-- popup modal tutors details -->
 <div id="my-modal">
   <div class="card">
     <div id="close">X</div>
@@ -62,13 +63,27 @@
     </div>
     <div class="profile-footer">
       
-      <a routerLink="/contact" class="btn-send">Contact</a>
+      <!-- <a routerLink="/contact" class="btn-send">Contact</a> -->
+      <a class="btn-send" id="call-msg">Contact</a>
     </div>
   </div>
- 
-
 </div>
 
+<!-- message box -->
+<div id="message-box">
+  <div id="close-box">X</div>
+  <div class="message-container">
+    <div class="message-title">
+      <div class="badge" id="badge">mattias melchior</div>
+    </div>
+    <div id="msg">
+    </div>
+  </div>
+  <div  class="message-footer">   
+   <input type="text" name="message" id="message" value="" placeholder="Write a message">
+    <input type="submit" value="Send" id="send">
+  </div>
+</div>
 
 
  <!--  <li *ngFor="let user of users.results | filter: searchText">
