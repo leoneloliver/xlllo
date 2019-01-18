@@ -35,11 +35,13 @@ function myAct(){
 		  }
 
 		  var callMsg = function(){
-		  	document.getElementById("msg").innerHTML = "";
+		  	var box = document.getElementById("msg");
+		  	box.innerHTML = "";
 		  	document.getElementById("message-box").classList.add("show"); 
 		  	var btn = document.getElementById("send");
 				var message = document.getElementById("message");
-				var box = document.getElementById("msg");
+				message.focus();
+				
 				btn.addEventListener("click", sendMessage);
 				function sendMessage(){
 				  box.innerHTML += "<p class='line'>"+ message.value+"</p>";

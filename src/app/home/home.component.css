@@ -332,7 +332,8 @@ div#msg {
   transition: all .3s ease !important;
 }
 .show .message-footer {
-  position: absolute;
+  position: fixed;
+  bottom: 0;
   transition: all .3s ease !important;
 }
 input[type="text"]{
