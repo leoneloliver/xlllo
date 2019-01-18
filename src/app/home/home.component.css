@@ -314,16 +314,26 @@ div#close {
 div#msg {
   min-height: 200px;
   border-bottom: 1px solid #b9aeae;
-  height: 50vh;
+  height: 100vh;
   padding-top: 15px;
   padding-left: 15px;
-  background: #f9f9f9;
-  color: #929292;
+  background: #ececec;
+  color: #656565
 }
 .message-footer {
-  padding: 5px;
-  border-bottom: 1px solid #b9aeae;
   padding: 6px 10px;
+  border-bottom: 1px solid #b9aeae;
+  /*position: fixed;*/
+  bottom: 0;
+  display: block;
+  width: 100%;
+  border-top: 1px solid #b9aeae;
+  background: #fff;
+  transition: all .3s ease !important;
+}
+.show .message-footer {
+  position: absolute;
+  transition: all .3s ease !important;
 }
 input[type="text"]{
   height: 40px;
