@@ -362,4 +362,10 @@ img#mini-avatar {
   border-radius: 50px;
   margin-right: 10px;
 }
+span.time {
+  padding-left: 15px;
+  font-size: 0.7em;
+  color: #969696;
+  font-weight: 100;
+}
 

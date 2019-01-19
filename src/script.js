@@ -5,6 +5,7 @@ function myAct(){
 	setTimeout(function(){ 
 		var classname = document.getElementsByClassName("pb-upper");
 			var myFunction = function() {
+				document.getElementById("avatar").src="";
 		    var name = this.getAttribute("data-name");
 		    var email = this.getAttribute("data-email");
 		    var address = this.getAttribute("data-address");
@@ -44,6 +45,8 @@ function myAct(){
 				
 				btn.addEventListener("click", sendMessage);
 				function sendMessage(){
+					// var time = new Date();
+				 //  var timeNow = time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
 				  box.innerHTML += "<p class='line'>"+ message.value+"</p>";
 				  message.value = "";
 				}
