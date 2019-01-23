@@ -3,10 +3,7 @@ function myAct(){
 	console.log("loading list of tutors..."); 
 	setTimeout(function(){ 
 		document.getElementById("fill").classList.add("full"); 
-		setTimeout(function(){
-			document.getElementById("loading").classList.add("loaded"); 
-		 },1000);
-
+		
 		var classname = document.getElementsByClassName("pb-upper");
 			var myFunction = function() {
 				document.getElementById("avatar").src="";
@@ -24,10 +21,16 @@ function myAct(){
 		    document.getElementById("mini-avatar").src=avatar;
 		   };
 
-		  Array.from(classname).forEach(function(element){
-		    element.addEventListener("click", myFunction);
-		  });
+		  setTimeout(function(){
 
+				document.getElementById("loading").classList.add("loaded"); 
+				Array.from(classname).forEach(function(element){
+		    	element.addEventListener("click", myFunction);
+		  	});
+
+		 	},1000);
+
+		  
 		  document.getElementById("close").addEventListener("click", closeModal);
 		  document.getElementById("my-modal").addEventListener("click", closeModal);
 		  function closeModal(){
