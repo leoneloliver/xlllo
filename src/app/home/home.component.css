@@ -368,4 +368,32 @@ span.time {
   color: #969696;
   font-weight: 100;
 }
+div#loading {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  background: #dfdfdfa8;
+  top: 0;
+  z-index: 9999999999999;
+}
+div#loading.loaded {
+  display: none;
+}
+div#loading .bar {
+  height: 20px;
+}
+div#loading #bar #fill {
+  height: 8px;
+  width: 2%;
+  background: #0fbeba;
+  transition: all .9s ease !important;
+}
+div#loading #bar #fill.full {
+  width: 100%;
+  transition: all .9s ease !important;
+}
+.ico-load{
+  margin-top: 250px;
+}
+
 

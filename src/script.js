@@ -1,8 +1,12 @@
 // This file is required by karma.conf.js and loads recursively all the .spec and framework files
 function myAct(){
-	console.log("loading list of tutors...");
-
+	console.log("loading list of tutors..."); 
 	setTimeout(function(){ 
+		document.getElementById("fill").classList.add("full"); 
+		setTimeout(function(){
+			document.getElementById("loading").classList.add("loaded"); 
+		 },1000);
+
 		var classname = document.getElementsByClassName("pb-upper");
 			var myFunction = function() {
 				document.getElementById("avatar").src="";
