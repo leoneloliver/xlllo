@@ -1,6 +1,6 @@
 # Skozoo APP
 What I learned by studying Angular in the last weeks.
-I create a simple prototype APP that is a list of tutors where you can search fro a tutor and see datails about them also you can sent a quick massage using a chat.
+I create a simple prototype APP that is a list of tutors where you can search for tutors and see datails about them also you can send quick massages using a chat.
 
 DEMO [skozoo-app](https://skozoo.netlify.com/)
 
@@ -10,7 +10,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 I developed I simple app prototype with Angular7 using Angular CLI.
 
 ### Installation
-Fist of all I need to work around some issues and solve them to make my Angular CLI environment working properly.
+Fist of all I needed to work around a few issues and solve them to make my Angular CLI environment working properly. 
 
 ```sh
 $ npm install -g @angular/cli
@@ -81,7 +81,7 @@ $ ng generate pipe filter
 import { FormsModule } from '@angular/forms';
 ```
 
-###### * For the layout and UI components I am not using any library, every css and html code were developed from scratch also I create some javascript functionalities to create simple interactions in the User Interface app.
+##### * For the layout and UI components I am not using any library, every css and html code were developed from scratch also I create some javascript functionalities to create simple interactions in the User Interface app.
 
 ## Build
 
@@ -100,13 +100,6 @@ $ ng build --prod
 ##### Publish directory
 * dist/xello
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 =) I enjoyeid learning Angular7 and I thought it is a very powerful framework. I will keep learning for sure. 
 
