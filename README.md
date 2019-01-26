@@ -2,6 +2,8 @@
 What I learned by studying Angular in the last weeks.
 I create a simple prototype APP that is a list of tutors where you can search fro a tutor and see datails about them also you can sent a quick massage using a chat.
 
+DEMO [skozoo-app](https://skozoo.netlify.com/)
+
 
 ### Angular CLI
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.2.
@@ -81,16 +83,22 @@ import { FormsModule } from '@angular/forms';
 
 ###### * For the layout and UI components I am not using any library, every css and html code were developed from scratch also I create some javascript functionalities to create simple interactions in the User Interface app.
 
-=) I enjoyeid learning Angular7 and I thought it is a very powerful framework. I will keep learning for sure. 
-
-.
-.
-.
-More 
-
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Deploy info
+
+* Netlify
+##### Build settings
+* Repository
+* github.com/leoneloliver/xlllo
+##### Build command
+```sh
+$ ng build --prod
+```
+##### Publish directory
+* dist/xello
 
 ## Running unit tests
 
@@ -99,4 +107,6 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+=) I enjoyeid learning Angular7 and I thought it is a very powerful framework. I will keep learning for sure. 
 
