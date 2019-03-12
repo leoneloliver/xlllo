@@ -19,6 +19,7 @@ function myAct(){
 		    document.getElementById("my-modal").classList.add("show-it"); 
 		    document.getElementById("badge").innerText=name;
 		    document.getElementById("mini-avatar").src=avatar;
+		    document.getElementById("wrap").classList.add("noscroll");
 		   };
 
 		  setTimeout(function(){
@@ -35,6 +36,7 @@ function myAct(){
 		  document.getElementById("my-modal").addEventListener("click", closeModal);
 		  function closeModal(){
 		    document.getElementById("my-modal").classList.remove("show-it");
+		    document.getElementById("wrap").classList.remove("noscroll");
 		  }
 
 		  document.getElementById("close-box").addEventListener("click", closeMessege);

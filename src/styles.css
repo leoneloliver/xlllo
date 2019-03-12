@@ -7,3 +7,6 @@
   list-style: none;
   font: normal 1em sans-serif;
 }
+.noscroll{
+	overflow: hidden;
+}
